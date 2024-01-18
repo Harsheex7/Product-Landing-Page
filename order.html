@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0 0;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+section > p {
+  text-align: center;
+}
+
+section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-top: 50px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+section.about {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.about .company-info {
+  margin-top: 30px;
+}
+
+.about h3 {
+  margin: 30px 0 10px;
+}
+
+.about .team {
+  text-align: left;
+  width: 100%;
+}
+
+.about .team ul {
+  padding-left: 20px;
+}
+
+section .cards .card {
+   background-image: url(/img/front.jpg);
+   background-size: 100% auto;
+  /* background-color: #076644; */
+  /* background: #fff; */
+  padding: 40px 15 px;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  margin-bottom: 40px;
+  width: calc(100% / 2 - 30px);
+  text-align: center;
+}
+
+.portfolio .cards .card {
+  padding: 0 0 20px;
+}
+
+.services .card img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.portfolio .card img {
+  width: 100%;
+  padding-bottom: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.cards .card p {
+  padding: 0 15px;
+  margin-top: 5px;
+}
+
+.about .row {
+  padding: 0 10px;
+}
+nav {
+                background-color: #241f1f;
+                color: #2c8b7e;
+                text-align: center;
+                padding: 20px;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #e9e1e1;
+                margin: 30px;
+            }
+.services h1{
+  font-family: MV Boli;
+  color: #076644;
+    font-size: 60px;
+}
+.services p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.services{
+  background-image: url(/img/plane.jpg);
+  background-size: 100%auto;
+}
+
+.cart {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: top ;
+            justify-content: right ;
+            height: 5vh;
+            margin: 0;
+        }
+
+        .add-to-cart-btn {
+            padding: 10px 20px;
+            font-size: 19px;
+            text-align: center;
+            text-decoration:double;
+            display: inline-block;
+            border: 4px solid black;
+            box-shadow: 0px 5px 10px black;
+            color: rgb(20, 62, 20);
+            border-radius: 7%;
+            
+            
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #3498db;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+  <!-- <a href="product.html" class="add-to-cart-btn">YOUR CART</a><br> -->
+  <nav>
+    <a href="index.html">Home</a> 
+    <a href="Product.html" target="_parent">Product</a>
+    <a href="Order.html" target="_parent">Order</a>
+    <a href="Contact.html" target="_blank">Contact Us</a>
+</nav>
+    <section class="services" id="services">
+        <h1>ORDER</h1>
+        <p><H2>IDEAL CHOICE</H2></p>
+         <P> Feel The Quality</P>
+        <ul class="cards">
+          <li class="card">
+            <img style="height: 400px;width: 370px;"  src="/img/1701938492991-Standard.png" alt="card">
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwimqMHa_eaBAxUOomYCHQA7DpUYABAFGgJzbQ&ase=2&gclid=EAIaIQobChMIpqjB2v3mgQMVDqJmAh0AOw6VEAQYAyABEgIQavD_BwE&sig=AOD64_3INkFoWWBS0a4G64lhFGajwzzyUA&ctype=5&nis=5&adurl&ved=2ahUKEwjnxrfa_eaBAxWh5TgGHQTICUoQvhd6BAgBEFs"><h3><button>Shop Now</button></h3></a><br>
+  
+          <form action="cart2.html" method="post">
+            <input type="hidden" name="product_id" value="123">
+            <input type="hidden" name="quantity" value="1">
+            <button type="submit"><h3>Add to Cart</h3></button>
+          </form>
+        </li>
+
+          <li class="card">
+            <img style="height: 400px;width: 370px;"  src="/img/1701937183130-Standard.png" alt="card">
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwilxp77_OaBAxXDRWAKHcb_AWIYABADGgJ0bQ&ase=2&gclid=EAIaIQobChMIpcae-_zmgQMVw0VgCh3G_wFiEAQYAiABEgLmEfD_BwE&sig=AOD64_1UJxTv5eHvLmxnGJCMlk4ny-uNhA&ctype=5&nis=5&adurl&ved=2ahUKEwjTiZL7_OaBAxVE2jgGHdR4CekQvhd6BAgBEFA"><h3><button>Shop Now</button></h3></a><br>
+            <form action="cart2.html" method="post">
+              <input type="hidden" name="product_id" value="123">
+              <input type="hidden" name="quantity" value="1">
+              <button type="submit"><h3>Add to Cart</h3></button>
+            </form>
+          </li>
+
+          <li class="card">
+            <img style="height: 400px;width: 370px;"  src="/img/1701938702426-Standard.png"alt="card">
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwimqMHa_eaBAxUOomYCHQA7DpUYABBTGgJzbQ&ase=2&gclid=EAIaIQobChMIpqjB2v3mgQMVDqJmAh0AOw6VEAsYCCABEgJGzfD_BwE&sig=AOD64_1LSjVGbhrgm4a6HuAb6-br4AAC0g&ctype=5&nis=5&adurl&ved=2ahUKEwjnxrfa_eaBAxWh5TgGHQTICUoQuxd6BQgBEK8D"><h3><button>Shop Now</button></h3></a><br>
+            <form action="/checkout" method="post">
+              <input type="hidden" name="product_id" value="123">
+              <input type="hidden" name="quantity" value="1">
+              <button type="submit"><h3>Add to Cart</h3></button>
+            </form>
+          </li>
+
+          <li class="card">
+            <img style="height: 400px;width: 370px;"  src= "/img/1701938929862-Standard.png"alt="card">
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwi8vcub--aBAxUBpmYCHZuFCs8YABALGgJzbQ&ase=2&gclid=EAIaIQobChMIvL3Lm_vmgQMVAaZmAh2bhQrPEAQYBiABEgILDvD_BwE&sig=AOD64_2MITuf8xLFMu2jxZt9NCqY6HiIcw&ctype=5&nis=5&adurl&ved=2ahUKEwjWp7-b--aBAxURhmMGHcAlD18Qvhd6BAgBEGg"><h3><button>Shop Now</button></h3></a><br>
+            <form action="/checkout" method="post">
+              <input type="hidden" name="product_id" value="123">
+              <input type="hidden" name="quantity" value="1">
+              <button type="submit"><h3>Add to Cart</h3></button>
+            </form>
+          </li>
+
+          <li class="card">
+            <img style="height: 400px;width: 370px;"  src="/img/1701964762602-Standard.png" alt="card">
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwj9ufWv_OaBAxVUu5YKHR08A8wYABAjGgJ0bA&ase=2&gclid=EAIaIQobChMI_bn1r_zmgQMVVLuWCh0dPAPMEAkYBiABEgLJyfD_BwE&sig=AOD64_2wY-YrizXkrwxWi1gxDfifupSwgw&ctype=5&nis=5&adurl&ved=2ahUKEwiIheqv_OaBAxVyvGMGHSsuAaYQuxd6BQgBEOcB"><h3><button>Shop Now</button></h3></a><br>
+            <form action="/checkout" method="post">
+              <input type="hidden" name="product_id" value="123">
+              <input type="hidden" name="quantity" value="1">
+              <button type="submit"><h3>Add to Cart</h3></button>
+            </form>
+          </li>
+
+          <li class="card">
+            <img style="height: 400px;width: 370px;"  src="/img/1701965572189-Standard.png" alt="card">
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwisv6PO-eaBAxXhCHsHHaElDigYABABGgJ0bQ&ase=2&gclid=EAIaIQobChMIrL-jzvnmgQMV4Qh7Bx2hJQ4oEAQYASABEgLktvD_BwE&sig=AOD64_2OXS1s30AiZPz_CQqt6m02JAq6Ng&ctype=5&nis=5&adurl&ved=2ahUKEwje1ZjO-eaBAxV7zaACHWSHDzIQvhd6BAgBEEs"><h3><button>Shop Now</button></h3> </a><br>
+          <form action="/checkout" method="post">
+            <input type="hidden" name="product_id" value="123">
+            <input type="hidden" name="quantity" value="1">
+            <button type="submit"><h3>Add to Cart</h3></button>
+          </form>
+          </li>
+        
+        
+            <li class="card">
+              <img style="height: 400px;width: 370px;"  src="/img/1701938254834-Standard.png" alt="card">
+              <a href="https://www.procareoutlet.com/products/biotin-b-complex-hair-serum"><h3><button>Shop Now</button></h3></a><br>
+              <form action="/checkout" method="post">
+                <input type="hidden" name="product_id" value="123">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit"><h3>Add to Cart</h3></button>
+              </form>
+            </li>
+
+            <li class="card">
+              <img style="height: 400px;width: 370px;"  src="/img/1701965073333-Standard.png" alt="card">
+              <a href="https://www.thenaturalwash.com/products/banana-shampoo"><h3><button>Shop Now</button></h3></a><br>
+              <form action="/checkout" method="post">
+            <input type="hidden" name="product_id" value="123">
+            <input type="hidden" name="quantity" value="1">
+            <button type="submit"><h3>Add to Cart</h3></button>
+          </form>
+            </li>
+
+            <li class="card">
+              <img style="height: 400px;width: 370px;"  src="/img/1701965197560-Standard.png"alt="card">
+              <a href="https://in.oriflame.com/products/product?code=32618&bvstate=pg:8/ct:r"><h3><button>Shop Now</button></h3></a><br>
+             <form action="/checkout" method="post">
+            <input type="hidden" name="product_id" value="123">
+            <input type="hidden" name="quantity" value="1">
+            <button type="submit"><h3>Add to Cart</h3></button>
+          </form>
+            </li>
+
+            <li class="card">
+              <img style="height: 400px;width: 370px;" src= "/img/1701966381979-Standard.png"alt="card">
+              <a href="https://cnhuiji.en.made-in-china.com/product/CZBtMWSPGHky/China-Hot-Selling-Propolis-Brown-Rice-Pulp-Nourishing-Hair-SPA-Shampoo-Luxury-Shampoo-Bottle-Rice-Water-Shampoo.html"><h3><button>Shop Now</button></h3></a><br>
+              <form action="/checkout" method="post">
+                <input type="hidden" name="product_id" value="123">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit"><h3>Add to Cart</h3></button>
+              </form>
+            </li>
+
+            <li class="card">
+              <img  style="height: 400px;width: 370px;"  src="/img/img5-removebg-preview.png" alt="card">
+              <a href="https://www.indiamart.com/proddetail/fawn-daily-control-shampoo-23917506330.html"><h3><button>Shop Now</button></h3></a><br>
+             <form action="/checkout" method="post">
+            <input type="hidden" name="product_id" value="123">
+            <input type="hidden" name="quantity" value="1">
+
+            <button type="submit"><h3>Add to Cart</h3></button>
+          </form>
+            </li>
+
+            <li class="card">
+              <img style="height: 400px;width: 370px;" src="/img/1701966101586-Standard.png" alt="card">
+              <a href="https://www.luckystore.in/products/loreal-professional-color-pure-shampoo-250ml"><h3><button>Shop Now</button></h3> </a><br>
+              <form action="/checkout" method="post">
+                <input type="hidden" name="product_id" value="123">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit"><h3>Add to Cart</h3></button>
+              </form>
+            </li>
+          </ul>
+      </section>
+</body>
+</html>

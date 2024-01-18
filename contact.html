@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+        background-image: url(/img/WRAPPER.jpg);
+        background-size: 100% auto;
+        text-size-adjust: 20px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      background-image:url(/img/front.jpg);
+      max-width: 600px;
+      margin: 50px auto;
+      background-color:  #145214;
+      padding: 52px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: grid;
+      grid-gap: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      margin-top: 4px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #376038;
+      color: #fff;
+      padding: 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+      size: 50px;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+
+  <div id="successMessage" style="display: none; color: green; margin-top: 10px;">Message sent successfully!</div>
+  <div id="errorMessage" class="error" style="display: none; margin-top: 10px;"></div>
+</div>
+
+<script>
+  function submitForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    
+    if (name === "" || email === "" || message === "") {
+      document.getElementById("errorMessage").innerText = "Please fill in all fields.";
+      document.getElementById("errorMessage").style.display = "block";
+      return;
+    }
+
+     
+    document.getElementById("contactForm").reset();
+    document.getElementById("errorMessage").style.display = "none";
+    document.getElementById("successMessage").style.display = "block";
+  }
+</script>
+
+</body>
+</html>

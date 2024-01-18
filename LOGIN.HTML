@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b5b3f;
+            background-image: url(/signupandlogin.jpg);
+            background-size: 100% auto; /* 100% width, auto height */
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        form {
+            background-color: rgb(204, 169, 113) ;
+            padding: 95px;
+            border-radius: 5px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: rgba(92, 52, 3, 0.427);
+            width: 100%;
+            padding: 10px 15px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:#59815b;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="login-form">
+        <h2>Login</h2>
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" required>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" required>
+        <button> <a href="index.html">Log In</a></button>
+        <!-- <button type="button" onclick="login()">Log In</button> -->
+        
+    </form>
+
+    <script>
+         function authenticateUser() {
+     
+     document.getElementById("loginError").innerText = "";
+     var username = document.getElementById("username").value;
+     var password = document.getElementById("password").value;
+     if (username === "harshita@gmail.com" && password === "12345678") {
+       localStorage.setItem("authenticated", "true");
+       window.location.href = "/Users/tarunsharma/index.html/dd.html";
+   
+     }else  if (username === "harshvardhan@gmail.com" && password === "12345678") {
+       localStorage.setItem("authenticated", "true");
+       window.location.href = "/Users/tarunsharma/index.html/dd.html";
+      }
+      else  if (username === "harshityadav@gmail.com" && password === "12345678") {
+       localStorage.setItem("authenticated", "true");
+       window.location.href = "/Users/tarunsharma/index.html/dd.html";
+      } else {
+       document.getElementById("loginError").innerText = "Invalid username or password";
+     }
+     }
+    </script>
+
+</body>
+</html>
